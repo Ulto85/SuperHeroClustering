@@ -30,7 +30,7 @@ numbers=  TSNE().fit_transform(vectors1)
 print(numbers.shape[0])
 cluster.fit(numbers)
 
-vectors2 =tfid.transform([processing('Bob was born in gotham but made is way to england'),processing('Bob liked noodles')])
+vectors2 =tfid.transform([processing('Bob was born in gotham but made his way to england'),processing('Bob liked noodles')])
 vectors3=TruncatedSVD(n_components=7).fit_transform(vectors2)
 numbers1=  TSNE().fit_transform(vectors3)
 cluster.predict(numbers1)
